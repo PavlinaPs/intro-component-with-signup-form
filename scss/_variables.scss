@@ -1,0 +1,30 @@
+// primary colors
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+
+// accent colors
+$blue: hsl(248, 32%, 49%);
+
+// neutral colors
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+$white: hsl(0, 0%, 100%);
+
+// typography
+$ff-sans: 'Poppins', sans-serif;
+
+$fs-terms: 1.1rem;
+$fs-smaller: 1.35rem;
+$fs-small: 1.5rem;
+$fs-normal: 1.6rem;
+$fs-heading: 2.75rem;
+
+$fs-heading-desktop: 6.5rem;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semiBold: 600;
+$fw-bold: 700;
+
+// @media
+$desktop: 45em;
