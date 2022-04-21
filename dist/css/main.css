@@ -62,7 +62,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   background-color: hsl(0deg, 100%, 74%);
-  padding-bottom: 5rem;
+  padding-bottom: 4.7rem;
 }
 
 .intro::before {
@@ -224,7 +224,7 @@ body {
 }
 
 .intro__form--input.error {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .intro__form--input:last-child.error {

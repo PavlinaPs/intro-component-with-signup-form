@@ -15,7 +15,7 @@ body {
     width: 37.5rem;
     height: fit-content;
     background-color: $red;
-    padding-bottom: 5rem;
+    padding-bottom: 4.7rem;
 }
 
 .intro::before {
@@ -50,7 +50,6 @@ body {
 }
 
 .intro__text-container {
-    // position: relative;
     padding: 9.2rem 3rem 6.2rem 3rem;
 }
 
@@ -172,7 +171,7 @@ body {
 }
 
 .intro__form--input.error {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 // dodelat
