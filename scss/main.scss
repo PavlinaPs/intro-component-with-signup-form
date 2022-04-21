@@ -13,8 +13,9 @@ body {
     position: relative;
     margin: 0.5rem auto;
     width: 37.5rem;
-    height: 100rem;
+    height: fit-content;
     background-color: $red;
+    padding-bottom: 5rem;
 }
 
 .intro::before {
@@ -98,7 +99,11 @@ body {
     filter: drop-shadow(0px 0.8rem 0.1rem rgba(0, 0, 0, 0.2));
 }
 
-.intro__form--input:not(:first-child) {
+.input-holder {
+    position: relative;
+}
+
+.input-holder:not(:first-child) {
     margin-top: 1.6rem;
 }
 
@@ -109,7 +114,9 @@ body {
     border-radius: 0.5rem;
 }
 
-.intro__form--input:focus {
+.intro__form--input:focus,
+.intro__form--input:active {
+    outline: none !important;
     border: 1px solid hsla(246, 25%, 77%, 0.5) !important;
 }
 
@@ -135,6 +142,11 @@ body {
     cursor: pointer;
 }
 
+.intro__form--submit:hover,
+.intro__form--submit:focus {
+    background-color: hsl(154, 59%, 65%);
+}
+
 .intro__form--terms {
     margin-top: 1.4rem;
     padding: 0 2rem;
@@ -149,6 +161,39 @@ body {
     font-size: $fs-terms;
     font-weight: $fw-bold;
     color: $red;
-    
+}
+
+.error {
+    border: 2px solid $red;
+}
+  
+.error-message {
+    display: none;
+}
+
+.intro__form--input.error {
+    margin-bottom: 4rem;
+}
+
+// dodelat
+.intro__form--input:last-child.error {
+    margin-bottom: 2rem;
+}
+  
+.error-message[data-visible=true] {
+    display: block;
+    position: absolute;
+    top: 6.15rem;
+    right: 0.2rem;
+    font-size: $fs-terms;
+    font-weight: $fw-medium;
+    color: $red;
+    font-style: italic;
+}
+.error-message[data-visible=true]::before {
+    content: url(../../images/icon-error.svg);
+    position: absolute;
+    top: -4.5rem;
+    right: 2.3rem;
 }
 
